@@ -1,0 +1,6 @@
+"id";"user_id";"name";"race";"level";"strength";"speed";"endurance";"experience";"avatar"
+"id";"character_id";"transformation_id"
+"id";"name";"date";"winner_id"
+"id";"tournament_id";"character_id"
+"id";"name";"level_required"
+"id";"name";"email";"password";"avatar"
