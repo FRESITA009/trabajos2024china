@@ -1,0 +1,118 @@
+/* Estilo General */  
+body {  
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Establece la fuente de todo el cuerpo */  
+    background-color: #e1fffc;  /* Color de fondo de la página */  
+    color: #ff6b81; /* Color de texto en un tono rosado */  
+    display: flex; /* Utiliza flexbox para organizar el contenido */  
+    flex-direction: column; /* Organiza los elementos en una columna */  
+    align-items: center; /* Centra los elementos horizontalmente */  
+    justify-content: center; /* Centra los elementos verticalmente */  
+    margin: 0; /* Elimina márgenes por defecto */  
+    padding: 0; /* Elimina padding por defecto */  
+}  
+
+/* Contenedor principal */  
+.container {  
+    width: 85%; /* Ancho del contenedor con un máximo del 90% de la pantalla */  
+    max-width: 600px; /* Ancho máximo del contenedor */  
+    background-color: #ead3ff; /* Color de fondo del contenedor */  
+    border-radius: 25px; /* Borde redondeado */  
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */  
+    padding: 30px; /* Padding interno del contenedor */  
+    margin-top: 70px; /* Margen superior para separarlo del borde superior */  
+    border: 2px solid #ff6b81; /* Borde rosado alrededor del contenedor */  
+}  
+
+/* Botones */  
+button {  
+    background-color: #ee8ca6e1; /* Color de fondo del botón */  
+    color: #fff; /* Color del texto del botón */  
+    border: none; /* Sin borde por defecto */  
+    border-radius: 10px; /* Bordes redondeados para el botón */  
+    padding: 10px 20px; /* Espaciado interno en el botón */  
+    font-size: 16px; /* Tamaño del texto del botón */  
+    font-weight: bold; /* Texto en negrita */  
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */  
+    box-shadow: 0 4px 8px rgba(255, 107, 129, 0.3); /* Sombra sutil para el botón */  
+    transition: 0.3s ease; /* Transición suave para efectos hover */  
+}  
+
+button:hover {  
+    background-color: #ff8aa0; /* Cambia el color de fondo al pasar el ratón */  
+    box-shadow: 0 6px 12px rgba(190, 12, 38, 0.5); /* Intensifica la sombra al hacer hover */  
+}  
+
+/* Inputs de formulario */  
+input[type="text"],  
+input[type="email"],  
+input[type="password"],  
+select {  
+    width: 85%; /* Ancho completo para los inputs */  
+    padding: 10px; /* Espacio interno en los inputs */  
+    margin: 10px 0; /* Margen arriba y abajo de los inputs */  
+    border: 1px solid #9a8aff; /* Borde rosado para los inputs */  
+    border-radius: 8px; /* Bordes redondeados */  
+    background-color: #fff; /* Fondo blanco para los inputs */  
+    color: #ff6b81; /* Color del texto en los inputs */  
+    font-size: 16px; /* Tamaño de la fuente en los inputs */  
+}  
+
+input::placeholder {  
+    color: #ffb3ba; /* Color del texto del placeholder */  
+}  
+
+/* Encabezados */  
+h1, h2, h3{  
+    color: #936bff; /* Color de los encabezados */  
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente específica para encabezados */  
+    text-align: center; /* Centra el texto de los encabezados */  
+}  
+
+
+/* Elementos de productos */  
+.producto {  
+    display: flex; /* Utiliza flexbox para organizar los elementos de productos */  
+    align-items: center; /* Alinea los elementos al centro verticalmente */  
+    padding: 10px; /* Espaciado interno */  
+    border: 5px solid #ffb3ba; /* Borde alrededor del producto */  
+    border-radius: 10px; /* Bordes redondeados */  
+    background-color: #fff; /* Fondo blanco */  
+    margin-bottom: 15px; /* Margen inferior entre productos */  
+}  
+
+.producto img {  
+    width: 60px; /* Ancho de la imagen del producto */  
+    height: 60px; /* Alto de la imagen del producto */  
+    border-radius: 50%; /* Imagen circular */  
+    margin-right: 10px; /* Margen derecho entre la imagen y el texto */  
+}  
+
+.producto .nombre {  
+    font-size: 18px; /* Tamaño de texto del nombre del producto */  
+    font-weight: bold; /* Negrita para el nombre del producto */  
+    color: #ff6b81; /* Color rosado para el nombre del producto */  
+}  
+
+.producto .precio {  
+    font-size: 16px; /* Tamaño de texto del precio */  
+    color: #ff8aa0; /* Color del precio */  
+}  
+
+/* Caja para los mensajes */  
+.mensaje {  
+    background-color: #fff0f3; /* Color de fondo de la caja de mensajes */  
+    border: 1px solid #ffb3ba; /* Borde rosado alrededor del mensaje */  
+    border-radius: 10px; /* Bordes redondeados */  
+    padding: 10px; /* Espaciado interno de mensaje */  
+    color: #ff6b81; /* Color del texto en la caja de mensajes */  
+    font-size: 16px; /* Tamaño de la fuente en la caja de mensajes */  
+    text-align: center; /* Centra el texto en la caja de mensajes */  
+    margin-top: 10px; /* Margen superior para separar de otros elementos */  
+}
+
+footer{
+    background-color: #ead3ff;
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+
