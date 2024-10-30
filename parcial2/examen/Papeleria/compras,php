@@ -1,0 +1,36 @@
+<?php
+include 'conexion.php';
+session_start();
+
+if ($_SESSION['user_rol'] != 'cliente') {
+    echo "No tienes permiso para acceder a esta página.";
+    exit;
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $producto_id = $_POST['producto_id'];
+    $cantidad = $_POST['cantidad'];
+
+    $sql = "UPDATE productos SET stock = stock - ? WHERE id ww= ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute([$cantidad, $producto_id]);
+
+    echo "Compra realizada con éxito.";
+}
+?>
+
+<h2>Productos Disponibles</h2>
+<?php
+$stmt = $conn->query("SELECT * FROM productos WHERE stock > 0");
+while ($producto = $stmt->fetch()) {
+    echo "<form method='post' action=''>
+            <p>{$producto['nombre']} - Precio: {$producto['precio']} - Stock: {$producto['stock']}</p>
+            <input type='hidden' name='producto_id' value='{$producto['id']}'>
+            <input type='number' name='cantidad' placeholder='Cantidad' required>
+            <button type='submit'>Comprar</button>
+          </form>";
+}
+?>
+
+<link rel="stylesheet" href="css/estilo.css">
+
